@@ -1,13 +1,26 @@
 .decline, .approved{
     background-color: antiquewhite;
+    padding: 1rem;
 }
 h1{
     font-size: 3rem;
     color: green;
 }
+.header-avail{
+    margin-top: 5rem;
+}
+.pad{
+    padding: 3rem;
+}
 a{
     text-decoration: none;
     color: brown;
+}
+.avail{
+    padding-top: 1rem;
+    font-size: 1.9rem;
+    font-weight: 900;
+    text-align: center;
 }
 .home-link {
     display: inline-block;
@@ -50,4 +63,3 @@ a{
     color:#FF4500; /* Color for the first word */
     font-weight: bold; /* Optional: Make the first word bold */
   }
-  

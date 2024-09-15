@@ -5,42 +5,125 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles/approved.css">
-    <link rel="stylesheet" href="styles/style.css">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/approved.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/about.css">
+<link rel="stylesheet" href="styles/media.css"></head>
 <body>
-    <nav class="blue">
-        <div class="nav">
-            <img src="image/logo-160px.png" alt="" class="logo">
-            <!-- <h4 class="logo">Nas-Smile</h4> -->
+    <div class="nav">
+        <img src="image/logo-160px.png" alt="Logo" class="logo">
 
-            <div class="nav-links">
-                <ul class=" ul">
-                    <li class=""><a href="index.html">Home</a></li>
-                    <li class=""><a href="#">About Us</a></li>
-                    <li class="none"><a href="#container">Services</a></li>
-                    <li class=""><a href="#">Contact</a></li>
-                    <li><a href="#" class="">Blogs</a></li>
+        <div class="nav-links">
+            <!-- Regular navigation links -->
+            <ul class="ul">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#Service">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#blogs">Blogs</a></li>
+            </ul>
 
+            <a href="form.html" class="btn-1">Book an appointment</a>
 
-                </ul>
-                <a href="#container" class="btn-1">Book an appointment</a>
-
+            <!-- Hamburger menu only visible in small screens -->
+            <div class="hamburger" onclick="toggleMenu()">
+                <!-- <p>=</p> -->
+                <i class="fas fa-bars"></i>
             </div>
         </div>
-    </nav>
-    <header>
+    </div>
+   <div class="mobile-container">
+    
+    <!-- Top Navigation Menu -->
+    <div class="topnav">
+        <img src="image/logo-160px.png" alt="Logo" class="logo">
+      <div id="myLinks">
+        <ul class=" ul">
+            <li class=""><a href="index.html">Home</a></li>
+            <li class=""><a href="index.html">About Us</a></li>
+            <li class="none"><a href="index.html">Services</a></li>
+            <li class=""><a href="#contact">Contact</a></li>
+            <li><a href="#" class="">Blogs</a></li>
+
+
+        </ul>
+        <a href="form.html" class="btn-1">Book an appointment</a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+   </div>
+    <header class="header-avail">
        
         <h1 id="approved">
+            
     </header>
     <div class="approved">
-    
+        <H2 class="avail">Our Available Dentist and their available time!</H2>
+        <div class="about-grid">
+            <div class="about-items">
+                <img src="image/DR-BHRAT-800x533.jpg" alt="dentist1">
+                <div class="">
+                <h1>Dr. Emmanuel</h1>
+                <h4>Dentist</h4>
+                <p>Dr. Emmanuel is a Dental Surgeon with over ten years of post-graduate experience. A graduate of the University of Ghana where she obtained a Bachelor of science in Medical Sciences and a Bachelor of Dental Surgery, Dr. Amaka began her career with Korle-Bu Teaching Hospital, Accra, Ghana, then went on to work with the Ridge Regional Hospital also in Accra, Ghana.
+                    Dr. Emmanuel has worked with various dental practices and joined Smile360 Dental Specialists as a Dentist in November 2016.
+                    
+                    While He enjoys all areas of dentistry, she has become extremely interested in orthodontics, keeping patient satisfaction paramount while working to create beautiful smiles daily.
+                    
+                    For leisure she enjoys watching movies, travelling and spending time with family.
+                    
+                    Dr. Emmanuel is registered with the Medical and Dental Council of Nigeria, the Ghana Medical Association and a member of Ghana Dental Association.</p>
+                    <h3>Available time:
+                       <span>("09:00"and "11:00")</span> </h3></div>
+            </div>
+            <div class="about-items">
+                <img src="image/DR-AGWERAL-NDHI-1-200x133.jpg" alt="dentist1">
+                <h1>Dr. Esther</h1>
+                <h4>Dentist</h4>
+                <p>Dr. Esther Amede is a graduate of the University of Ghana where she obtained a Bachelors’ degree in Medical Sciences and a Bachelor’s Dental Surgery from the same University.
+                    Dr Esther Amede has over 10 years of practice experience across both the private and public health sectors. She started her clinical practice in Ghana with Korle Bu Teaching Hospital and Ridge Regional Hospital, Accra. She then returned to Nigeria to perform her National Youth Service (NYSC) with Maitama Regional Hospital, Abuja. Dr. Amede subsequently worked at Afe Dental Clinic and Kelina Hospital in the FCT prior to joining Smile360 in 2019.
+                    When she isn’t creating beautiful smiles, Dr. Esther loves listening to music, dancing, travelling, reading (loves African literature) and DIY crafts.
+                    
+                    Dr Esther is a professional member of the Ghana Medical and Dental Council and a fully registered member of the Medical and Dental Council of Nigeria.
+                    
+                    </p>
+                    <h3>Available time:
+                       <span>("10:00" and "13:00")</span> </h3>
+            </div>
+            <div class="about-items">
+                <img src="image/DR-AMAKA-200x133.jpg" alt="dentist1">
+                <h1>Dr. Anita</h1>
+                <h4>Dentist</h4>
+                <p>Dr. Anita  is a Dental professional with over thirteen years of experience. She
+                    graduated from Himachal Pradesh University, India with a Bachelor’s degree in
+                    Dental Surgery, then worked as a Senior Dental Surgeon in New Delhi India for
+                    four years, performing a variety of pediatric, cosmetic and general dentistry
+                    procedures.
+                    In 2011, Dr. Sharma received her license to practice professionally in Nigeria.
+                    Joining the Smile360 team in 2018 as a General Dentist, Dr. Sharma specializes in
+                    Pediatric and Digital dentistry and has since been a major driver of the Project
+                    Smile Initiative (an annual CSR Initiative by Smile360).
+                    
+                    A fluent speaker of English and Hindi, Dr. Sharma is a professional member of
+                    Nigerian Dental Association, the Indian Dental Association and holds a certificate
+                    from the International Red Cross Society in cardio-pulmonary resuscitation.
+                    
+                    Away from work, Dr. Sharma loves reading and enjoys classical dancing.
+                    .</p>
+                    <h3>Available time:
+                       <span>(12:00"and "14:00)</span> </h3>
+            </div>
+        </div>
 
     
-</h1>
+
 <a href="index.html" class="home-link">Go back to Home</a>
 </div>
 <div class="contact" id="contact">
@@ -108,7 +191,17 @@ const patientName = localStorage.getItem('name');
 console.log(patientName)
 
 let approved = document.getElementById('approved')
-approved.innerHTML = `Sorry ${patientName}, No available slots for the selected dentist and time,Please pick another time and Dentist`;
+approved.innerHTML = `Sorry ${patientName}, No available slots for the selected dentist and time.Please pick another time and Dentist from the list below.`;
+
+
+        function myFunction() {
+          var x = document.getElementById("myLinks");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
     </script>
 </body>
 </html>

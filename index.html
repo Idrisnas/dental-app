@@ -11,7 +11,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/media.css">
-
+<link rel="stylesheet" href="styles/about.css">
 </head>
 
 <body>
@@ -37,6 +37,28 @@
             </div>
         </div>
     </div>
+   <div class="mobile-container">
+    
+    <!-- Top Navigation Menu -->
+    <div class="topnav">
+        <img src="image/logo-160px.png" alt="Logo" class="logo">
+      <div id="myLinks">
+        <ul class=" ul">
+            <li class=""><a href="index.html">Home</a></li>
+            <li class=""><a href="index.html">About Us</a></li>
+            <li class="none"><a href="#Service">Services</a></li>
+            <li class=""><a href="#contact">Contact</a></li>
+            <li><a href="#blogs" class="">Blogs</a></li>
+
+
+        </ul>
+        <a href="form.html" class="btn-1">Book an appointment</a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+   </div>
 
     <header>
         <h1 class="cont" id="cont">Welcome to Nas-Smile 360</h1>
@@ -287,6 +309,17 @@
                 menu.classList.remove('active');
             }
         });
+
+        
+        function myFunction() {
+          var x = document.getElementById("myLinks");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+        
     </script>
 </body>
 
