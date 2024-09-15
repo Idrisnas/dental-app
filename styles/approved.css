@@ -1,0 +1,53 @@
+.decline, .approved{
+    background-color: antiquewhite;
+}
+h1{
+    font-size: 3rem;
+    color: green;
+}
+a{
+    text-decoration: none;
+    color: brown;
+}
+.home-link {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #007BFF;
+    text-decoration: none;
+    position: relative;
+    padding-left: 20px;
+    animation: blink 1s infinite;
+}
+
+.home-link::before {
+    content: '←';
+    position: absolute;
+    left: 0;
+    font-size: 20px;
+    top: 0;
+}
+
+@keyframes blink {
+    0%, 100% {
+        color: #007BFF; 
+    }
+    50% {
+        color: #FF4500; 
+    }
+}
+
+.home-link:hover {
+    color: #FF4500;
+}
+#approved p {
+    color: gray; /* Default text color */
+    font-size: 1rem;
+  }
+  
+  #approved p span {
+    color:#FF4500; /* Color for the first word */
+    font-weight: bold; /* Optional: Make the first word bold */
+  }
+  

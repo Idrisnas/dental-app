@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.about-grid{
+    margin-top: 5rem;
+    /* background-color: red; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 2rem;
+    gap: 10px;
+    width: 100%;
+
+}
+.about-items{
+    background-color: whitesmoke;
+    /* text-align: center; */
+    /* padding: 1rem; */
+    width: 100%;
+
+}
+.about-items img{
+    width: 100%;
+  transition: 1s ease-in-out;
+
+}
+.about-items img:hover{
+  transform: scale(1.1);
+
+}
+.about-items h1{
+    /* background-color: green; */
+}
+.about-items span{
+    /* background-color: palevioletred; */
+    color: #E91e62;
+    cursor: pointer;
+}

@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/approved.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav class="blue">
+        <div class="nav">
+            <img src="image/logo-160px.png" alt="" class="logo">
+            <!-- <h4 class="logo">Nas-Smile</h4> -->
+
+            <div class="nav-links">
+                <ul class=" ul">
+                    <li class=""><a href="index.html">Home</a></li>
+                    <li class=""><a href="#">About Us</a></li>
+                    <li class="none"><a href="#container">Services</a></li>
+                    <li class=""><a href="#">Contact</a></li>
+                    <li><a href="#" class="">Blogs</a></li>
+
+
+                </ul>
+                <a href="#container" class="btn-1">Book an appointment</a>
+
+            </div>
+        </div>
+    </nav>
+    <header>
+       
+        <h1 id="approved">
+    </header>
+    <div class="approved">
+    
+
+    
+</h1>
+<a href="index.html" class="home-link">Go back to Home</a>
+</div>
+<div class="contact" id="contact">
+    <div class="touch"> <h1>Get in touch with us</h1>
+     <h5>We at Smile 360 Dental Specialist are available 24/7</h5></div>
+     <div class="location">
+         <div class="lagos">
+             <h4>Lagos, Nigeria</h4>
+             <div>
+                 <div class="place">
+                     <i class="fa-solid fa-location-dot"></i>
+                     <p> 40A Cameron Road Ikoyi, Lagos Nigeria
+                     </p>
+                 </div>
+                 <div class="place">
+
+                     <i class="fa-solid fa-phone"></i>
+                     <a href="#">+234 818 136 0000</a>
+                 </div>
+                 <div class="place">
+                     <i class="fa-solid fa-envelope"></i>
+                     <a href="#">info@smile360ng.com</a>
+                 </div>
+             </div>
+         </div>
+         <div class="lagos">
+             <h4>Abuja, Nigeria</h4>
+             <div>
+                 <div class="place">
+                     <i class="fa-solid fa-location-dot move"></i>
+                     <p> 5A, Nyasa Close, off Ontario Crescent, off Mississippi, Maitama Abuja
+                     </p>
+                 </div>
+                 <div class="place">
+
+                     <i class="fa-solid fa-phone"></i>
+                     <a href="#">+234 818 136 0023</a>
+                 </div>
+                 <div class="place">
+                     <i class="fa-solid fa-envelope"></i>
+                     <a href="#">info@smile360ng.com</a>
+                 </div>
+             </div>
+         </div>
+     </div>
+
+ </div>
+<footer>
+    <div>
+        <p>&copy; Copyright 2024 | Smile 360 Dental Specialist | All Rights Reserved</p>
+    </div>
+    <div class="icon">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-square-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-youtube"></i><i class="fa-brands fa-linkedin"></i><i
+            class="fa-brands fa-whatsapp"></i>
+    </div>
+</footer>
+    <script>
+
+const patientName = localStorage.getItem('name');
+
+;
+console.log(patientName)
+
+let approved = document.getElementById('approved')
+approved.innerHTML = `Sorry ${patientName}, No available slots for the selected dentist and time,Please pick another time and Dentist`;
+    </script>
+</body>
+</html>
